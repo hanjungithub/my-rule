@@ -1,0 +1,83 @@
+# ===========================
+# Twitter / X 优化版规则列表
+# For Clash / OpenClash RULE-SET
+# ===========================
+
+# === 核心主域 ===
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,t.co
+
+# === 官方API / 登录 / OAuth ===
+DOMAIN-SUFFIX,api.twitter.com
+DOMAIN-SUFFIX,api.x.com
+DOMAIN-SUFFIX,gql.twitter.com
+DOMAIN-SUFFIX,gql.x.com
+DOMAIN-SUFFIX,oauth.twitter.com
+
+# === 网页端 / 移动端 ===
+DOMAIN-SUFFIX,mobile.twitter.com
+DOMAIN-SUFFIX,abs-0.twimg.com
+DOMAIN-SUFFIX,abs-1.twimg.com
+DOMAIN-SUFFIX,abs-2.twimg.com
+DOMAIN-SUFFIX,abs-3.twimg.com
+
+# === 媒体资源 ===
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,abs.twimg.com
+DOMAIN-SUFFIX,pbs.twimg.com
+DOMAIN-SUFFIX,video.twimg.com
+DOMAIN-SUFFIX,video-cdn.twitter.com
+DOMAIN-SUFFIX,ton.twimg.com
+DOMAIN-SUFFIX,ton.twitter.com
+
+# === 嵌入 / 小组件 / 卡片系统 ===
+DOMAIN-SUFFIX,platform.twitter.com
+DOMAIN-SUFFIX,platform-assets.twitter.com
+DOMAIN-SUFFIX,syndication.twitter.com
+DOMAIN-SUFFIX,publish.twitter.com
+DOMAIN-SUFFIX,widgets.twimg.com
+
+# === 广告 / 跟踪 ===
+DOMAIN-SUFFIX,ads.twitter.com
+DOMAIN-SUFFIX,ads-api.twitter.com
+DOMAIN-SUFFIX,analytics.twitter.com
+DOMAIN-SUFFIX,ad-api.twitter.com
+DOMAIN-SUFFIX,ads-twitter.com
+
+# === 开发者 / 文档 / 配置接口 ===
+DOMAIN-SUFFIX,developer.twitter.com
+DOMAIN-SUFFIX,dev.twitter.com
+DOMAIN-SUFFIX,client-config.twitter.com
+DOMAIN-SUFFIX,config.twitter.com
+
+# === 流媒体 / 实时推送 ===
+DOMAIN-SUFFIX,stream.twitter.com
+DOMAIN-SUFFIX,streaming.twitter.com
+DOMAIN-SUFFIX,stream.twitterapp.com
+
+# === CDN（官方或广泛使用）===
+DOMAIN-SUFFIX,twimgcdn.com
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,cloudfront.net
+
+# === 卡片系统（预览、嵌入）===
+DOMAIN-SUFFIX,card.twitter.com
+DOMAIN-SUFFIX,card-analytics.twitter.com
+DOMAIN-SUFFIX,card-config.twitter.com
+
+# === 其他常见域名 ===
+DOMAIN-SUFFIX,status.twitterstat.us
+DOMAIN-SUFFIX,help.twitter.com
+DOMAIN-SUFFIX,insights.twitter.com
+DOMAIN-SUFFIX,trends.twitter.com
+
+# =======================
+# Keyword（安全兜底，不误伤）
+# =======================
+DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,twimg
+
+# =======================
+# END OF FILE
+# =======================
