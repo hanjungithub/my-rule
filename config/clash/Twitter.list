@@ -1,109 +1,83 @@
-# Twitter / X domain list (comprehensive)
-# Save as Twitter.list and set behavior: domain or classical depending on your provider format
+# ===========================
+# Twitter / X 优化版规则列表
+# For Clash / OpenClash RULE-SET
+# ===========================
 
-# Core domains
+# === 核心主域 ===
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,api.twitter.com
-DOMAIN-SUFFIX,mobile.twitter.com
-DOMAIN-SUFFIX,help.twitter.com
-DOMAIN-SUFFIX,ads.twitter.com
-DOMAIN-SUFFIX,ads-api.twitter.com
-DOMAIN-SUFFIX,status.twitter.com
-DOMAIN-SUFFIX,card.twitter.com
 DOMAIN-SUFFIX,t.co
 
-# Media / images / video / CDN
+# === 官方API / 登录 / OAuth ===
+DOMAIN-SUFFIX,api.twitter.com
+DOMAIN-SUFFIX,api.x.com
+DOMAIN-SUFFIX,gql.twitter.com
+DOMAIN-SUFFIX,gql.x.com
+DOMAIN-SUFFIX,oauth.twitter.com
+
+# === 网页端 / 移动端 ===
+DOMAIN-SUFFIX,mobile.twitter.com
+DOMAIN-SUFFIX,abs-0.twimg.com
+DOMAIN-SUFFIX,abs-1.twimg.com
+DOMAIN-SUFFIX,abs-2.twimg.com
+DOMAIN-SUFFIX,abs-3.twimg.com
+
+# === 媒体资源 ===
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,abs.twimg.com
 DOMAIN-SUFFIX,pbs.twimg.com
 DOMAIN-SUFFIX,video.twimg.com
-DOMAIN-SUFFIX,ton.twimg.com
-DOMAIN-SUFFIX,upload.twitter.com
-DOMAIN-SUFFIX,media.twitter.com
 DOMAIN-SUFFIX,video-cdn.twitter.com
+DOMAIN-SUFFIX,ton.twimg.com
+DOMAIN-SUFFIX,ton.twitter.com
 
-# Syndication, widgets & embedding
+# === 嵌入 / 小组件 / 卡片系统 ===
 DOMAIN-SUFFIX,platform.twitter.com
+DOMAIN-SUFFIX,platform-assets.twitter.com
 DOMAIN-SUFFIX,syndication.twitter.com
 DOMAIN-SUFFIX,publish.twitter.com
-DOMAIN-SUFFIX,dev.twitter.com
 DOMAIN-SUFFIX,widgets.twimg.com
 
-# Analytics & tracking (might be blocked or proxied)
-DOMAIN-SUFFIX,analytics.twitter.com
+# === 广告 / 跟踪 ===
+DOMAIN-SUFFIX,ads.twitter.com
 DOMAIN-SUFFIX,ads-api.twitter.com
-DOMAIN-SUFFIX,insights.twitter.com
-DOMAIN-SUFFIX,trends.twitter.com
+DOMAIN-SUFFIX,analytics.twitter.com
+DOMAIN-SUFFIX,ad-api.twitter.com
+DOMAIN-SUFFIX,ads-twitter.com
 
-# Mobile / app related endpoints
-DOMAIN-SUFFIX,api-0.twitter.com
-DOMAIN-SUFFIX,api-1.twitter.com
-DOMAIN-SUFFIX,api-2.twitter.com
-DOMAIN-SUFFIX,api-3.twitter.com
-DOMAIN-SUFFIX,gql.twitter.com
-DOMAIN-SUFFIX,api-0.x.com
-DOMAIN-SUFFIX,gql.x.com
+# === 开发者 / 文档 / 配置接口 ===
+DOMAIN-SUFFIX,developer.twitter.com
+DOMAIN-SUFFIX,dev.twitter.com
+DOMAIN-SUFFIX,client-config.twitter.com
+DOMAIN-SUFFIX,config.twitter.com
 
-# Streaming, realtime
+# === 流媒体 / 实时推送 ===
 DOMAIN-SUFFIX,stream.twitter.com
 DOMAIN-SUFFIX,streaming.twitter.com
 DOMAIN-SUFFIX,stream.twitterapp.com
 
-# Shorteners & redirects
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,twttr.com
-
-# Cards / oembed / social
-DOMAIN-SUFFIX,card-analytics.twitter.com
-DOMAIN-SUFFIX,card-config.twitter.com
-DOMAIN-SUFFIX,platform-assets.twitter.com
-
-# Developers / API docs / OAuth
-DOMAIN-SUFFIX,developer.twitter.com
-DOMAIN-SUFFIX,oauth.twitter.com
-DOMAIN-SUFFIX,api.twitterstat.us
-
-# Third-party CDNs commonly used with Twitter assets
+# === CDN（官方或广泛使用）===
 DOMAIN-SUFFIX,twimgcdn.com
 DOMAIN-SUFFIX,fastly.net
-DOMAIN-SUFFIX,cdn.api.twitter.com
-DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,cloudfront.net
 
-# Common subdomains and hosts seen in requests
-DOMAIN-SUFFIX,abs-0.twimg.com
-DOMAIN-SUFFIX,abs-1.twimg.com
-DOMAIN-SUFFIX,abs-2.twimg.com
-DOMAIN-SUFFIX,pbs.twimg.com
-DOMAIN-SUFFIX,video.twimg.com
-DOMAIN-SUFFIX,ton.twitter.com
+# === 卡片系统（预览、嵌入）===
+DOMAIN-SUFFIX,card.twitter.com
+DOMAIN-SUFFIX,card-analytics.twitter.com
+DOMAIN-SUFFIX,card-config.twitter.com
 
-# Ads / monetization related
-DOMAIN-SUFFIX,ads-twitter.com
-DOMAIN-SUFFIX,ad-api.twitter.com
-DOMAIN-SUFFIX,ads-delivery.twitter.com
+# === 其他常见域名 ===
+DOMAIN-SUFFIX,status.twitterstat.us
+DOMAIN-SUFFIX,help.twitter.com
+DOMAIN-SUFFIX,insights.twitter.com
+DOMAIN-SUFFIX,trends.twitter.com
 
-# Support / help / static
-DOMAIN-SUFFIX,static.twitter.com
-DOMAIN-SUFFIX,static.twttr.com
-DOMAIN-SUFFIX,staticxx.facebook.com
-
-# Misc / experimental / internal endpoints
-DOMAIN-SUFFIX,internal-api.twitter.com
-DOMAIN-SUFFIX,config.twitter.com
-DOMAIN-SUFFIX,client-config.twitter.com
-
-# Keyword matches (catch variants)
+# =======================
+# Keyword（安全兜底，不误伤）
+# =======================
 DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,twimg
-DOMAIN-KEYWORD,t.co
-DOMAIN-KEYWORD,twttr
-DOMAIN-KEYWORD,x.com
 
-# Exact domains (when needed)
-DOMAIN,twitter.com
-DOMAIN,api.twitter.com
-DOMAIN,platform.twitter.com
-DOMAIN,twimg.com
-
-# End of Twitter.list
+# =======================
+# END OF FILE
+# =======================
